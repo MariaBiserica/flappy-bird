@@ -1,16 +1,40 @@
-# React + Vite
+# portocala
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight Flappy Bird clone built with Vite and React.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- `flappy-bird/` - main game app
+  - `src/` - React components and styles
+  - `public/` - static assets
+  - `package.json` - dependencies and scripts
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Open terminal in `flappy-bird/`.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start dev server:
+   ```bash
+   npm run dev
+   ```
+4. Open the local URL shown (usually `http://localhost:5173`).
 
-## Expanding the ESLint configuration
+## How to play (Multiplayer)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Press `Space` / `Up Arrow` (or click/tap) to make your bird flap upward.
+- Each player tries to keep their own bird alive through the pipes.
+- Avoid collisions and ground contact; the last surviving bird wins.
+- Try to survive as long as possible and beat your high score.
+
+## Quick workflow
+
+- Edit game code in `flappy-bird/src/FlappyBirdGame.jsx` and `flappy-bird/src/App.jsx`.
+- Refresh browser to see updates.
+
+## Notes
+
+- Keep changes simple and use React state/effects for game updates.
+- If dev server fails, check terminal for errors and fix missing imports or syntax issues.
