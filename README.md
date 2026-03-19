@@ -1,4 +1,4 @@
-# portocala
+# flappy-bird
 
 A lightweight Flappy Bird clone built with Vite and React.
 
